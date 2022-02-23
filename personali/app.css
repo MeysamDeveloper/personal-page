@@ -12,20 +12,62 @@
     background-color: rgb(131, 231, 153);
     cursor: pointer;
 }
-#head-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(50, 54, 53);
-    margin: -10px;
-    padding: 0;
+#show-menu  {display:none;}
+.open, .close {margin-right: 15px;margin-top: 7px; background-color:inherit; color:#fff; text-align:right; font-weight:normal; font-size:1.5em; padding: 0;  top:10%; right:5%; display:none; }
+@media screen and (min-width : 1024px){
+    #head{
+        background-color: rgb(50, 54, 53);
+        margin: -17px;
+    }
+    #head-ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    
+    }
+    
+    #column-3-1{
+        display: table-cell;
+    
+    }
+    #column-1-1{
+        display: table-cell;
+    
+    }
+}
+@media screen and (max-width : 1024px){
+    #head{
+        background-color: rgb(50, 54, 53);
+        padding: 14px;
+        margin: -17px;
+
+    }
+    #head-ul{
+        display: none;
+    
+    }
+    
+    .hide, .open { display:block;}
+    #show-menu:checked ~ .open {display:none;}
+    #show-menu:checked ~ .close {font-size:1.6em; display:block;}
+    #show-menu:checked ~ 
+    #head-ul{
+        list-style-type: none;
+        display: block;
+        padding: 0px;
+    
+    }
+    #show-menu:checked ~ 
+    #main_paragraph{
+       
+    }
 
 }
-#head{
-    position: fixed;
-    width: 100%;
-
+#main_paragraph{
+    margin: 35px;
 }
+
 p{
     color: rgb(100, 100, 100);
 }
@@ -44,19 +86,13 @@ body{
     display: table;
     text-align:justify;
 }
-#column-3-1{
-    display: table-cell;
 
-}
 #column-3-1 p{
     line-height: 25px;
     padding-right: 30px;
 
 }
-#column-1-1{
-    display: table-cell;
 
-}
 #column-1-1 p{
     line-height: 25px;
     padding-right: 30px;
@@ -66,30 +102,27 @@ body{
     line-height: 25px;
     padding-right: 30px;
 }
-#main_paragraph{
-    margin: 35px;
-    margin-top: 60px;
-}
+
 .icon-social a{
     
     color: white;
     vertical-align: middle;
+    margin: -30px;
+
 }
 .icon-social li{
     
     display: table-cell;
-    padding-top: 15px ;
+    padding: 15px;
     padding-left: 20px;
-
-    
 
 }
 .icon-social{
     display: table;
     list-style-type: none;
+    
 }
 #image-a{
     max-width: 100%;  
     height: auto;  
 }
-

@@ -1,3 +1,6 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
 #head-li{
     padding: 15px ;
     color: white;
@@ -66,4 +69,46 @@ body{
 #main_paragraph{
     margin: 35px;
     margin-top: 60px;
+}
+.icon-social a{
+    
+    color: white;
+    vertical-align: middle;
+}
+.icon-social li{
+    
+    display: table-cell;
+    padding-top: 15px ;
+    padding-left: 20px;
+
+    
+
+}
+.icon-social{
+    display: table;
+    list-style-type: none;
+}
+#image-a{
+    max-width: 100%;  
+    height: auto;  
+}
+@keyframes slideshow {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    40% { left: -100%; }
+    55% { left: -100%; }
+    70% { left: -200%; }
+    85% { left: -200%; }
+    100% { left: -300%; }
+    }
+figure{
+    /*overflow: hidden;
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slideshow infinite; 
+    float: left;*/
 }
